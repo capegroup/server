@@ -1,0 +1,36 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "capegroup's backend server",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/capegroup/server.git"
+  },
+  "keywords": [
+    "cape",
+    "minecraft",
+    "typescript"
+  ],
+  "author": "y0urfr1end",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/capegroup/server/issues"
+  },
+  "homepage": "https://github.com/capegroup/server#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.28.2",
+    "@typescript-eslint/parser": "^4.28.2",
+    "eslint": "^7.30.0",
+    "typescript": "^4.3.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "dependencies": {
+    "@types/node": "^16.3.1",
+    "express": "^4.17.1",
+    "log-symbols": "^5.0.0"
+  }
+}
