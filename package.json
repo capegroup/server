@@ -29,6 +29,8 @@
   },
   "type": "module",
   "dependencies": {
+    "@joshdb/core": "^1.2.5",
+    "@joshdb/sqlite": "^1.1.9",
     "@types/node": "^16.3.1",
     "express": "^4.17.1",
     "log-symbols": "^5.0.0"
