@@ -42,10 +42,6 @@ if(!fs.existsSync("./capes")) {
 }
 
 
-app.get("/cosmetics/view", (req, res) => {
-	res.json(fs.readdirSync("src/cosmetics"))
-})
-
 app.get("/users/:user.cfg", async (req, res) => {
 	let cosmetics = await db.get(req.params.user);
 	
