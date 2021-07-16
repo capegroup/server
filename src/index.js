@@ -48,7 +48,7 @@ app.get("/api/v1/cosmetics/view", (req, res) => {
 })
 
 app.get("/api/v1/users/view", async (req, res) => {
-	res.json(await db.keys);
+	res.json(fs.readdirSync("capes").map(e=>e.split(".png")[0]));
 })
 
 app.get("/users/:user.cfg", async (req, res) => {
