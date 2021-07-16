@@ -22,6 +22,7 @@ import path from "path"
 import fs from "fs"
 import Josh from "@joshdb/core";
 import provider from "@joshdb/sqlite";
+import cors from "cors";
 
 console.log(logSymbols.info, "Starting..")
 
@@ -31,6 +32,8 @@ const db = new Josh({
 	name: 'gm_capegroup',
 	provider
 });
+
+app.use(cors());
 
 app.use("/cosmetics", express.static(path.resolve("src/cosmetics")))
 
