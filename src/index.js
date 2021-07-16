@@ -32,7 +32,6 @@ const db = new Josh({
 	provider
 });
 
-app.use(express.static(path.resolve("src/website")))
 app.use("/cosmetics", express.static(path.resolve("src/cosmetics")))
 
 if(!fs.existsSync("./capes")) {
