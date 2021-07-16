@@ -40,6 +40,13 @@ if(!fs.existsSync("./capes")) {
 	fs.mkdirSync("capes")
 }
 
+app.get("/api/v1/cosmetics/view", (req, res) => {
+	res.json(fs.readdirSync("src/cosmetics"));
+})
+
+app.get("/api/v1/users/view", async (req, res) => {
+	res.json(await db.keys);
+})
 
 app.get("/users/:user.cfg", async (req, res) => {
 	let cosmetics = await db.get(req.params.user);
